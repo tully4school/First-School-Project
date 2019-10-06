@@ -2,14 +2,23 @@
 * {
 	box-sizing: border-box;
 }
-@keyframes slidefromright {
-	100% {
-		transform: translateX(100%);
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes textfadein {
+	0%{opacity:0}
+	80%{opacity:0}
+	100%{opacity:1}
+}
+@keyframes slidein {
+    from { width: 0%; }
+    to { width: 100%%; }
 	}
-	0% {
-		transform: translateX(0);
-}
-}
 header {
 display: flex;
 align-items: center;
@@ -80,6 +89,7 @@ a:hover {
 	background-size: cover;
 	width:45%;
 	background-position: 50% 50%;
+	animation: fadein 2s;
 }
 .navright {
 	border-radius: 50%;
@@ -101,7 +111,7 @@ img {
   height: auto;
 }
 .right {
-	animation: 1s ease-in 0s 1 slidefromright;
+    animation: slidein 3s ease forwards;
 	font-family: 'Righteous', cursive;
 	justify-content: center;
 	align-items: center;
@@ -109,6 +119,9 @@ img {
 	color: white;
 	font-size:100px;
 	width: 65%;
+}
+.topright {
+	animation: textfadein 3s;
 }
 
 .be {
