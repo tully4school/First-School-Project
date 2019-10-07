@@ -11,9 +11,15 @@
     }
 }
 @keyframes textfadein {
-	0%{opacity:0}
-	80%{opacity:0}
-	100%{opacity:1}
+	0% { 
+		opacity:0 
+	}
+	80% { 
+		opacity:0 
+	}
+	100% { 
+		opacity:1 
+	}
 }
 @keyframes slidein {
     from { width: 0%; }
@@ -125,7 +131,9 @@ img {
 }
 
 .be {
+	animation: slidein 3s ease forwards;
 	border-bottom: 9px solid white;
+
 }
 .container2 {
 	display: flex;
@@ -140,6 +148,9 @@ img {
 	align-content: center;	
 	justify-content:center;
 	text-align: justify;
+}
+.left2:focus {
+	animation: slidein 3s ease forwards;
 }
 .right2 {
 	background-image: url(../images/imgright.jpg);
@@ -285,6 +296,26 @@ img {
 	background-position: center;
 	z-index: -1;
 }
+.container3 {
+	max-width: 1335px;
+	margin: 0 auto;
+}
+.grid-row {
+	display: flex;
+	flex-grow: row wrap;
+	justify-content: flex-start;
+}
+.griditem1 {
+	background-image: url('../images/row3bg.jpg');
+	height: 100vh;
+	flex-basis: 35%;
+	position: relative;
+}
+.griditem2 {
+	height:100vh;
+	flex-basis: 65%;
+	position: relative;
+}
 footer {
 	display: flex;
 	width: 100%;
@@ -418,7 +449,7 @@ form {
 }
 	.footercontainer2 {
 	flex-direction: column;
-	height: 85vh;
+	height: 95vh;
 	top: 15vh;
 	justify-content: space-evenly;
 }
