@@ -434,20 +434,20 @@ form {
 }
 @media screen and (max-width: 768px) {
 	.container {
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.cart {
 		right: 15%;
 	}
 	.right {
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.container2 {
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.left2 {
 		width: 100%;
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.right2 {
 		display: none;
@@ -456,10 +456,10 @@ form {
 		width: 100%;
 	}
 	footer {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.footercontainer1 {
-		height: 15vh;
+		min-height: 15vh;
 		flex-direction: column;
 		text-align: center;
 		padding-top: 0;
@@ -467,7 +467,7 @@ form {
 	}
 	.footercontainer2 {
 		flex-direction: column;
-		height: 95vh;
+		min-height: 95vh;
 		top: 15vh;
 		justify-content: space-evenly;
 	}
