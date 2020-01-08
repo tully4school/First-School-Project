@@ -1,40 +1,44 @@
-
 * {
 	box-sizing: border-box;
 }
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @keyframes textfadein {
-	0% { 
-		opacity:0 
+	0% {
+		opacity: 0;
 	}
-	80% { 
-		opacity:0 
+	80% {
+		opacity: 0;
 	}
-	100% { 
-		opacity:1 
+	100% {
+		opacity: 1;
 	}
 }
 @keyframes slidein {
-    from { width: 0%; }
-    to { width: 100%%; }
+	from {
+		width: 0%;
 	}
+	to {
+		width: 100%%;
+	}
+}
 header {
-display: flex;
-align-items: center;
+	display: flex;
+	align-items: center;
+	background: #fff;
 }
 .logo {
-	font-family: 'Righteous', cursive;
+	font-family: "Righteous", cursive;
 	font-size: 40px;
 }
 .logo a:hover {
-	color:grey;
+	color: grey;
 }
 nav {
 	width: 100%;
@@ -55,27 +59,31 @@ nav {
 	top: 39.3px;
 	right: 14.05px;
 }
-.navlinks li, .buttons li {
-	font-family: 'Noto Sans', sans-serif;
+.navlinks li,
+.buttons li {
+	font-family: "Noto Sans", sans-serif;
 	display: inline-block;
-	color:#1d2f43;
+	color: #1d2f43;
 	padding: 0 10px;
 }
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
 	width: 35px;
 	height: 5px;
 	background-color: #1d2f43;
 	margin: 6px 0;
 }
-a{
+a {
 	text-decoration: none;
-	color:#222222;
+	color: #222222;
 }
 a:hover {
- transition: color 0.2s ease;
- color: #ff7578;
+	transition: color 0.2s ease;
+	color: #ff7578;
 }
-.buttons, .hamburger {
+.buttons,
+.hamburger {
 	margin: 4px;
 	grid-column: 8;
 	grid-row: 1;
@@ -87,25 +95,26 @@ a:hover {
 	grid-template-columns: 577px 1fr 1fr 1fr;
 }*/
 	display: flex;
-	width:100%;
-	height:100vh;	
+	width: 100%;
+	height: 100vh;
 }
 .left {
 	background-image: url("../images/left.png");
 	background-size: cover;
-	width:45%;
+	width: 45%;
 	background-position: 50% 50%;
 	animation: fadein 2s;
 }
 .navright {
 	border-radius: 50%;
-	width:50px;
-	height:50px;
+	width: 50px;
+	height: 50px;
 }
 .cart {
 	background-color: #333333;
 }
-.left, .right {
+.left,
+.right {
 	display: flex;
 }
 /*.left {
@@ -113,17 +122,17 @@ a:hover {
 	background-size: cover;
 }*/
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 .right {
-    animation: slidein 3s ease forwards;
-	font-family: 'Righteous', cursive;
+	animation: slidein 3s ease forwards;
+	font-family: "Righteous", cursive;
 	justify-content: center;
 	align-items: center;
 	background-color: #ff7578;
 	color: white;
-	font-size:100px;
+	font-size: 100px;
 	width: 65%;
 }
 .topright {
@@ -133,7 +142,6 @@ img {
 .be {
 	animation: slidein 3s ease forwards;
 	border-bottom: 9px solid white;
-
 }
 .container2 {
 	display: flex;
@@ -141,12 +149,13 @@ img {
 	height: 100vh;
 }
 .left2 {
-	font-family: 'Righteous', cursive;
+	font-family: "Righteous", cursive;
+	background-color: #fff;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	align-content: center;	
-	justify-content:center;
+	align-content: center;
+	justify-content: center;
 	text-align: justify;
 }
 .left2:focus {
@@ -167,11 +176,11 @@ img {
 	margin: 10%;
 }
 .innerleft p {
-    font-family: 'Nunito', sans-serif;
-    font-size:20px;
-    color: #666666;
-    letter-spacing: 0px;
-    line-height:26px;
+	font-family: "Nunito", sans-serif;
+	font-size: 20px;
+	color: #666666;
+	letter-spacing: 0px;
+	line-height: 26px;
 }
 .button a {
 	width: 30%;
@@ -179,12 +188,12 @@ img {
 	color: white;
 	border: 2px solid #ff7578;
 	border-radius: 4px;
-	font-family: 'Nunito', sans-serif;
+	font-family: "Nunito", sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	background-image: linear-gradient(to right, #efc9cc, #ff7578);
 	background-size: 100% 100%;
-	transition: background-image 3s ease-in-out; 
+	transition: background-image 3s ease-in-out;
 }
 .button a:hover {
 	background-size: 0% 0%;
@@ -195,30 +204,30 @@ img {
 }
 .shoprow {
 	display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px;
-    align-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 400px;
+	align-content: space-between;
 }
 .shop {
-	width:32%;
-	height:90%;
+	width: 32%;
+	height: 90%;
 	margin: 0 auto;
 	position: relative;
 }
 .pricebox {
-	font-family: 'Nunito', sans-serif;
+	font-family: "Nunito", sans-serif;
 	color: black;
-    position: absolute;
-    width: 60%;
-    height: 46px;
-    background-color:rgba(0,0,0,0.04);
-    top: 83%;
-    left: 20%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    z-index: 1;
+	position: absolute;
+	width: 60%;
+	height: 46px;
+	background-color: rgba(0, 0, 0, 0.04);
+	top: 83%;
+	left: 20%;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	z-index: 1;
 }
 .pricebox h4 {
 	font-weight: 100;
@@ -230,7 +239,7 @@ img {
 	margin-top: 10px;
 }
 .priceonhover {
-	opacity: 0.0;
+	opacity: 0;
 	background-color: grey;
 }
 .s1 {
@@ -306,13 +315,13 @@ img {
 	justify-content: flex-start;
 }
 .griditem1 {
-	background-image: url('../images/row3bg.jpg');
+	background-image: url("../images/row3bg.jpg");
 	height: 100vh;
 	flex-basis: 35%;
 	position: relative;
 }
 .griditem2 {
-	height:100vh;
+	height: 100vh;
 	flex-basis: 65%;
 	position: relative;
 }
@@ -328,9 +337,9 @@ footer {
 }
 .footercontainer1 {
 	display: flex;
-	font-family: 'Questrial', sans-serif;
+	font-family: "Questrial", sans-serif;
 	font-size: 19px;
-	background-color: rgba(0,0,0,.99);
+	background-color: rgba(0, 0, 0, 0.99);
 	width: 100%;
 	position: absolute;
 	height: 30vh;
@@ -342,7 +351,7 @@ form {
 }
 .footercontainer2 {
 	display: flex;
-	background-color: rgba(0,0,0,.95);
+	background-color: rgba(0, 0, 0, 0.95);
 	width: 100%;
 	position: absolute;
 	height: 50vh;
@@ -358,18 +367,21 @@ form {
 	padding: 0 5%;
 }
 .footercontainer2 ul li h4 {
-	font-family: 'Righteous', cursive;
+	font-family: "Righteous", cursive;
 }
-.footercontainer2 ul li a{
-	font-family: 'Questrial', sans-serif;
+.footercontainer2 ul li a {
+	font-family: "Questrial", sans-serif;
 	line-height: 278%;
-	color: #B1B1B1;
+	color: #b1b1b1;
 }
 .footercontainer2 ul li a:hover {
 	color: white;
 }
 @media screen and (min-width: 992px) {
-	.lg, .md, .sm, .xs {
+	.lg,
+	.md,
+	.sm,
+	.xs {
 		display: none;
 	}
 	.hamburger {
@@ -388,24 +400,26 @@ form {
 		top: 35.3px;
 	}
 	.container {
-		flex-direction:column-reverse;
+		flex-direction: column-reverse;
 		height: 50vh;
 		margin-top: 105px;
-}
-	.buttons, .hamburger {
+	}
+	.buttons,
+	.hamburger {
 		margin: 10px;
 		z-index: 1;
-}
+	}
 	.right {
 		width: 100%;
 		height: 50vh;
-}
+	}
 	.shop {
-		width:49%;
-}
-	.xl, .md {
+		width: 49%;
+	}
+	.xl,
+	.md {
 		display: none;
-}
+	}
 }
 @media screen and (max-width: 881px) {
 	.footercontainer2 ul li a {
@@ -417,7 +431,8 @@ form {
 }
 @media screen and (max-width: 768px) {
 	.container {
-		height: 50vh;	}
+		height: 50vh;
+	}
 	.cart {
 		right: 15%;
 	}
@@ -438,35 +453,36 @@ form {
 		width: 100%;
 	}
 	footer {
-	height: 100vh;
-}
+		height: 100vh;
+	}
 	.footercontainer1 {
-	 height: 15vh;
-	 flex-direction: column;
-	 text-align: center;
-	 padding-top: 0;
-	 padding-bottom: 25px;
-}
+		height: 15vh;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 0;
+		padding-bottom: 25px;
+	}
 	.footercontainer2 {
-	flex-direction: column;
-	height: 95vh;
-	top: 15vh;
-	justify-content: space-evenly;
-}
+		flex-direction: column;
+		height: 95vh;
+		top: 15vh;
+		justify-content: space-evenly;
+	}
 	.footerlogo {
-	margin: 0 auto;
-}
+		margin: 0 auto;
+	}
 	.footercontainer2 ul {
-	margin: 0 auto;
-	line-height: 0px;
-	text-align: center;
-}
+		margin: 0 auto;
+		line-height: 0px;
+		text-align: center;
+	}
 	.footercontainer2 ul li a {
-	font-size: medium;
-	line-height: 214%;
+		font-size: medium;
+		line-height: 214%;
 	}
 
-	.xl, .lg{
+	.xl,
+	.lg {
 		display: none;
 	}
 	.md {
@@ -484,9 +500,10 @@ form {
 	}
 }
 @media screen and (max-width: 367px) {
-.navlinks li, .buttons li {
-	padding: 0 1px;
-}
+	.navlinks li,
+	.buttons li {
+		padding: 0 1px;
+	}
 	.right p {
 		text-align: center;
 	}
